@@ -1,0 +1,5 @@
+package lv.edite.paysystem;
+
+public interface Payee {
+
+}
