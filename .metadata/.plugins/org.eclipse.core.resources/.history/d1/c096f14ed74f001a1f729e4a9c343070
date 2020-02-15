@@ -1,0 +1,47 @@
+package lv.edite.test;
+
+import java.util.Arrays;
+
+import lv.edite.employee.CommissionEmployee;
+import lv.edite.employee.SalaryEmployee;
+import lv.edite.paysystem.PaymentSystem;
+
+public class TestPayment {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		PaymentSystem paymentSystem = new PaymentSystem();
+		
+		CommissionEmployee toms = new CommissionEmployee("Toms Ozolins", 10101010, 5000.5);
+			paymentSystem.addPayee(toms);
+		
+		CommissionEmployee ieva = new CommissionEmployee("Ieva Berzina ", 20201012, 6000.2);
+				paymentSystem.addPayee(ieva);
+		
+		SalaryEmployee edite = new SalaryEmployee("Edite Grabovska", 505050, 3000.7);
+			paymentSystem.addPayee(edite);
+		
+		SalaryEmployee janis = new SalaryEmployee("Janis Lapins", 606060, 4000.1);
+			paymentSystem.addPayee(janis);
+		
+			// simulate work
+			
+		toms.giveCommission(4.0);
+		toms.giveCommission(50.3);
+		ieva.giveCommission(40.2);
+		ieva.giveCommission(4.0);
+		toms.giveCommission(52.3);
+		ieva.giveCommission(30.2);
+		
+
+		paymentSystem.processPayments();
+		
+		
+			
+		
+	}
+
+}

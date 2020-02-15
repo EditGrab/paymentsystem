@@ -1,0 +1,23 @@
+package lv.edite.employee;
+
+public class CommissionEmployee {
+	
+	private String name;
+	private Integer bankAccount;
+	protected Double grossWage;
+	
+	private Double grossCommission = 0.0;
+
+	public CommissionEmployee(String name, Integer bankAccount,
+			Double grossWage, Double grossCommission) {
+		super();
+		this.name = name;
+		this.bankAccount = bankAccount;
+		this.grossWage = grossWage;
+		
+		
+	}
+	
+	
+
+}

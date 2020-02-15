@@ -1,0 +1,19 @@
+package lv.edite.test;
+
+import lv.edite.employee.CommissionEmployee;
+import lv.edite.paysystem.PaymentSystem;
+
+public class TestPayment {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		PaymentSystem paymentSystem = new PaymentSystem();
+		
+		CommissionEmployee toms = new CommissionEmployee("Toms Ozolins ", 10101010101, 5000.5);
+
+	}
+
+}
